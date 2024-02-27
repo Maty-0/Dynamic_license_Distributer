@@ -4,9 +4,9 @@ Made by: Matyas Engelen
 
 #Config
 
-    #You will need to use a file share that the users can access, this folder is a demo.
-    $License_Not_In_use = "D:\Coding\Powershell\Dynamic_Licensing\Test_License_fileShare\not_in_use"
-    $License_In_use = "D:\Coding\Powershell\Dynamic_Licensing\Test_License_fileShare\in_use"
+#You will need to use a file share that the users can access, this folder is a demo.
+$License_Not_In_use = "D:\Coding\Powershell\Dynamic_Licensing\Test_License_fileShare\not_in_use"
+$License_In_use = "D:\Coding\Powershell\Dynamic_Licensing\Test_License_fileShare\in_use"
 
 #If for some reason the log off task fails, this will take care of it.
 Get-ChildItem $License_In_use -Filter "*@$env:UserName.reg" | 
